@@ -33,7 +33,8 @@ import { FeatureFlags } from "./services/FeatureFlags";
 const Conference = React.lazy(() => import("./components/conference"));
 const PreviewScreen = React.lazy(() => import("./components/PreviewScreen"));
 
-const defaultTokenEndpoint = process.env.REACT_APP_TOKEN_GENERATION_ENDPOINT;
+const defaultTokenEndpoint =
+  "https://prod-in2.100ms.live/hmsapi/vinay-videoconf-1725.app.100ms.live/";
 const envPolicyConfig = JSON.parse(process.env.REACT_APP_POLICY_CONFIG || "{}");
 
 let appName;
